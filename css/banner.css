@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+ .texto-banner{
+  padding-top: 25rem;
+  width: 100%;
+  color: #fff;
+  text-shadow: 1px 2px 2px #000;
+  font-size: 1.8rem;
+  text-align: center;
+  z-index: 1;
+}
+
+  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+  }
+
+@media screen and (max-width:375px) {
+
+    .hero{
+      padding-top: 6rem;
+    }
+
+    video{
+      height: 750px;
+      width: 400px;
+    }
+
+    .capa{
+      height: 750px;
+      width: 400px;
+    }
+
+    .texto-banner{
+      padding-top: 0;
+    }
+}

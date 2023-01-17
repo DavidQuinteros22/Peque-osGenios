@@ -1,0 +1,138 @@
+.title__section{
+    padding-top: 3rem;
+}
+.contenedor{
+    width: 90%;
+    min-height: 600px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider{
+    background-color: #ffffff;
+    
+}
+
+.slider__contenedor{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+}
+
+.slider__body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.slider__body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider__texts{
+    max-width: 600px;
+}
+
+.subtitle{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.slider__review{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7
+}
+
+.slider__img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider__arrow{
+    cursor: pointer;
+    width: 90%;
+}
+
+.slider__arrow:nth-of-type(2){
+    justify-self: end;
+}
+
+@media screen and (max-width:768px) {
+    
+    .slider{
+        margin-top: auto;
+    }
+    
+    .slider__body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 1em;
+    }
+    
+    .subtitle{
+        text-align: center;
+    }
+    .slider__picture{
+        grid-row: 1/2;
+    }
+
+    .slider__img{
+        width: 210px;
+        height: 210px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .slider{
+        margin-top: auto;
+    }
+    .slider__container{
+        grid-template-columns: 25px 1fr 25px;
+    }
+
+    .slider__picture{
+        grid-row: 1/2;
+    }
+    .slider__arrow{
+        width: 100%;
+    }
+
+    .slider__img{
+        width: 160px;
+        height: 160px;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .slider__review{
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+}
+
+@media (max-width:560) {
+    .slider__review{
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+}

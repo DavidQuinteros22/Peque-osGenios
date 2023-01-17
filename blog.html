@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Pequeños Genios</title>
+    <!--Icono-->
+    <link rel="icon" type="image/png" href="Logo.jpg">
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="css/blog.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <div class="nav container">
+            <!-- logo -->
+            <a href="index.html" class="logo"><img src="Logo.jpg" alt="logo" class="logo"></a>
+        </div>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">El Blog de Pequeños Genios!</h2>
+            <span class="home-subtitle">Toda las noticias tecnologicas en un lugar!</span>
+        </div>
+    </section>
+    <!-- Post Filter -->
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">Todos</span>
+        <span class="filter-item" data-filter="robots">Robots</span>
+        <span class="filter-item" data-filter="programacion">Programacion</span>
+        <span class="filter-item" data-filter="recursos">Recursos</span>
+    </div>
+    <!-- Posts -->
+    <section class="post container">
+        <!-- Post box 1 -->
+        <div class="post-box robots">
+            <img src="assets/Belen-Torres.png" alt="Belen-Torres" class="post-img">
+            <h2 class="category">Robots</h2>
+            <a href="belen-torres-de-Argentina-a-Japon.html" class="post-title">Belen Torres, de Argentina a Japon</a>
+            <span class="post-date">16 Enero 2023</span>
+            <p class="post-description">Fue la primera persona que dio una charla de diversidad en la conferencia de
+                robótica RosCon, en Kyoto. En nuestro país esta roboticista de 35 años enseña a jóvenes de escuelas
+                técnicas cómo iniciarse en el área a través de la experiencia Roboteam.</p>
+
+            <div class="profile">
+                <img src="assets/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">David Quinteros</span>
+            </div>
+        </div>
+        <!-- Post box 2 -->
+        <div class="post-box programacion">
+            <img src="assets/programacion-1.jpg" alt="" class="post-img">
+            <h2 class="category">Programacion</h2>
+            <a href="cuanto-gana-un-programador.html" class="post-title">¿Cuanto gana un programador en Argentina?</a>
+            <span class="post-date">12 Enero 2023</span>
+            <p class="post-description">Los programadores son altamente demandados en el mercado laboral dado que el
+                mundo cada vez se encuentra más digitalizado y las empresas requieren de empleados que puedan seguirle
+                el paso a los avances tecnológicos.</p>
+            <div class="profile">
+                <img src="assets/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">David Quinteros</span>
+            </div>
+        </div>
+        <!-- Post box 3 -->
+        <div class="post-box programacion">
+            <img src="assets/lenguajesDeProgramacion.jpg" alt="lenguajesDeProgramacion" class="post-img">
+            <h2 class="category">Programacion</h2>
+            <a href="lenguajesDeProgramacion2023.html" class="post-title">¿Qué lenguajes de programación tendrán relevancia en 2023?</a>
+            <span class="post-date">7 Enero 2023</span>
+            <p class="post-description">Si no fuera por los lenguajes de programación, ninguno de los servicios en línea
+                que usamos a diario existiría. No hay necesidad de demostrar cuán importante es el papel que desempeñan
+                en el funcionamiento de nuestro mundo actual. Su número es muy grande, por lo que vale la pena centrarse
+                en los más buscados en el mercado de TI. La demanda de especialistas en la industria de TI no disminuye.
+                Además, todo indica que esta tendencia continuará durante al menos otra década. Si estás considerando
+                aprender un lenguaje de programación o ya estás en la industria de TI, esta información sobre los
+                pronósticos de las tecnologías más populares para 2023 puede ser de utilidad.</p>
+
+            <div class="profile">
+                <img src="assets/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">David Quinteros</span>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Footer -->
+    <div class="footer container">
+        <p>&#169; Pequeños Genios - Todos los Derechos Reservados </p>
+        <div class="social">
+            <a href="https://www.facebook.com/Pequen0sGenios/"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/pequenosgenios.cba/?hl=es"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </div>
+
+    <!-- Link jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!-- Link de js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
